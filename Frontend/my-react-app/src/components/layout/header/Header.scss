@@ -1,0 +1,92 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .e-store{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .links{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        nav{
+            ul{
+                display: flex;
+                gap: 24px;
+                li{
+                    list-style: none;
+                }
+
+                li:hover{
+                   color: red;
+                }
+            }
+        }
+    }
+
+    .header-bottom{
+        display: flex;
+        gap: 30px;
+
+        .search-box{
+            display: flex;
+            gap: 10px;
+            border: 1px solid rgb(218, 218, 218);
+            align-items: center;
+            border-radius: 18px;
+            padding-left: 12px;
+            padding-right: 22px;
+
+            input{
+                border: none;
+                padding: 10px;
+            }
+        }
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icons-and-button{
+            display : flex;
+            align-items: center;
+            gap: 24px;
+
+            .icons-box{
+                display: flex;
+                gap: 20px;
+
+                .wish-box{
+                    border: 1px solid rgb(218, 218, 218);
+                    padding: 8px;
+                    border-radius: 50%;
+                }
+
+                .basket-box{
+                    border: 1px solid rgb(218, 218, 218);
+                    padding: 8px;
+                    border-radius: 50%;
+                }
+                
+            }
+            .sign-button{
+                background-color: #2577fd;
+                color: white;
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 20px;
+                padding-left: 20px;
+                border-radius: 12px;
+            }
+            .sign-button:hover{
+                background-color: #2498db;
+            }
+        }
+    }
+}

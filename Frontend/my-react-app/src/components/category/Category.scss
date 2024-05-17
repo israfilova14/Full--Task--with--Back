@@ -1,0 +1,84 @@
+div{
+  
+    .title-box{
+        height: 200px;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+        .shop-title{
+            font-family: "Playfair Display", serif;
+            font-size: 50px;
+        }
+    }
+   
+    .our-categories{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 200px;
+    
+        .background-1{
+            background-image: url('../../assets/images/cat1.jpg.webp');
+            background-repeat: no-repeat;
+            width: 25%;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+           
+            .box{
+                margin-right: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                gap: 12px;
+             }
+        }
+        .background-2{
+            background-image: url('../../assets/images/cat2.jpg.webp');
+            background-repeat: no-repeat;
+            width: 25%;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 12px;
+
+            .box{
+                margin-right: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                gap: 12px;
+             }
+        }
+        .background-3{
+            background-image: url('../../assets/images/cat3.jpg.webp');
+            background-repeat: no-repeat;
+            width: 25%;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 12px;
+
+            .box{
+                margin-right: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                gap: 12px;
+             }   
+        }
+    }
+    
+}
+ 

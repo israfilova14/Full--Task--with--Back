@@ -1,0 +1,55 @@
+.winter-collection{
+    background-color: #c8ebff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+
+    .about-collection{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 12px;
+
+        .discount{
+            color: #2577fd;
+            font-family: "Yellowtail", "cursive";
+            font-size: 24px;
+            font-style: oblique;
+        }
+        .collection-title{
+            font-size: 72px;
+            width: 400px;
+             font-family: "Playfair Display", serif;
+        }
+
+        .collection-text{
+            font-family: "Playfair Display", serif;
+            font-style: oblique;
+            font-size: 22px;
+        }
+       
+        .winter-box{
+            width: 64%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .shop-button{
+            width: 120px;
+            background-color: #2577fd;
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 12px;
+        }
+
+        .shop-button:hover{
+            background-color: #2498db;
+        }
+    }
+}
+
