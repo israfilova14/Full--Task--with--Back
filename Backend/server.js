@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 app.use(express.json())
 dotenv.config()
 
+app.use(cors())
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -59,17 +60,18 @@ app.get("/store", async(req, res) =>{
     }
 })
 
-app.delete("/store", async(req, res) =>{
-    try{
-        const {id} = req.params;
-        const store = await Store.findByIdAndDelete(id)
-        res.status(200).send(store)
-    }catch(err){
+
+app.delete("/store/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
+        const store = await Store.findByIdAndDelete(id);
+        res.status(200).send(store);
+    } catch (err) {
         res.status(500).json({
-            message: err
-        })
+            message: err.message
+        });
     }
-})
+});
 
 app.get("/store/:id", async(req, res) =>{
     try{

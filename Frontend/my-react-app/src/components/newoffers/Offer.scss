@@ -1,0 +1,37 @@
+.offers-box{
+    width: 80%;
+    display: flex;
+    background-color: #dff1ff;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 60px;
+
+    .offers-box-left-side{
+        h1{
+            font-size: 50px;
+            width: 400px; 
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .offers-box-right-side{
+     
+        input{
+            border: none;
+            padding: 15px 24px;
+            border-radius: 18px;
+        }
+        button{
+            padding: 15px 30px;
+            border: none;
+            border-radius: 18px;
+            color: white;
+            background-color: #2577fd;
+        }
+    }
+}

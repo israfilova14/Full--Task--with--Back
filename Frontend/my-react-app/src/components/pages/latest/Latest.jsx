@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Latest.scss"
+import Products from '../products/Products'
 
 const Latest = () => {
   return (
@@ -13,6 +14,7 @@ const Latest = () => {
         <p>Offer</p>
         </div>
       </div>
+      <Products></Products>
     </div>
   )
 }

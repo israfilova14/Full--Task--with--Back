@@ -1,36 +1,35 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice , createAsyncThunk} from '@reduxjs/toolkit'
 import axios from "axios"
 
-
-const getAllProducts = createAsyncThunk(
-    async () => {
+const initialState ={
+  products: [],
+  basket: []
+}
+ 
+ export const getAllData = createAsyncThunk( "products", async () => {
+ 
       const response = await axios.get("http://localhost:5000/store")
+      console.log(response.data);
       return response.data
     },
   )
+
 export const productsSlice = createSlice({
   name: 'products',
-  initialState: {
-    value: []
-  },
-
-  
-
+ initialState,
   reducers: {
-    increment: state => {
-  
-      state.value += 1
-    },
-    decrement: state => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
+    addToBasket: (state, action)=>{
+      state.basket.push(action.payload)
     }
+  },
+  extraReducers: (builder) =>{
+   builder.addCase(getAllData.fulfilled, (state, action) =>{
+       state.products = action.payload
+   })
   }
+
 })
 
- 
-export const {} = counterSlice.actions
+export const {addToBasket} = productsSlice.actions
 
 export default productsSlice.reducer

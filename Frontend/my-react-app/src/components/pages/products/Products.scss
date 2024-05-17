@@ -1,0 +1,33 @@
+.products-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 80%;
+   margin-left: 120px;
+  margin-top: 40px;
+
+  .product-box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 6px;
+     .product-title{
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+     }
+     .product-title:hover{
+        color: red;
+     }
+
+     .product-price{
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+     }
+     .box-for-icons{
+      display: flex;
+      gap: 20px;
+     }
+}}

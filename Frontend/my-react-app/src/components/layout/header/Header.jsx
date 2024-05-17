@@ -32,6 +32,9 @@ const Header = () => {
                         <li>
                             <NavLink to={'/contact'} style={{textDecoration: "none", color: "black"}}>Contact</NavLink>
                         </li>
+                        <li>
+                            <NavLink to={'/basket'} style={{textDecoration: "none", color: "black"}}>Basket</NavLink>
+                        </li>
                     </ul>
                 </nav>
              </div>

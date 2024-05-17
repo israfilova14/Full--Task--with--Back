@@ -1,0 +1,34 @@
+.footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+    p{
+        margin-top: 12px; 
+    }
+    .aorem{
+        margin-top: 12px;
+        width: 240px;
+        font-size: 16px;
+    }
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 40px;
+    :first-child{
+        width: 200px;
+    }
+    :nth-child(2){
+        width: 200px;
+    }
+    div{
+        :first-child{
+            font-weight: bold;
+        }
+    }
+}

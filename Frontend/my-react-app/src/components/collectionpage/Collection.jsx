@@ -1,7 +1,6 @@
 import React from 'react'
-import "../collection/Collection.jsx"
-import winter from "../../assets/images/hero_man.png.webp"
-import "../collection/Collection.scss"
+import winter from "../../assets/images/hero.png"
+import '../collectionpage/Collection.scss'
 
 const Collection = () => {
   return (

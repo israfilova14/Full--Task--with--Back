@@ -1,5 +1,5 @@
 import React from 'react'
- import "../../components/category/Category.scss"
+ import "./Category.scss"
 
 const Category = () => {
   return (
